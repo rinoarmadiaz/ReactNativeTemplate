@@ -1,6 +1,6 @@
 export type RootTabParamList = {
   Dashboard: undefined;
-  Chart: undefined
+  Chart: undefined;
 };
 
 export type DashboardStackParamList = {
@@ -8,8 +8,8 @@ export type DashboardStackParamList = {
 };
 
 export type ChartStackParamList = {
-  Chart: undefined
-}
+  Chart: undefined;
+};
 
 export enum AppScreens {
   Dashboard = "Dashboard",

@@ -1,7 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
-import { Text } from "react-native";
 import Icons from "src/assets/svg/Icons";
 import ChartLandingScreen from "src/screens/ChartLandingScreen";
 import DashboardLandingScreen from "src/screens/DashboardLandingScreen";
