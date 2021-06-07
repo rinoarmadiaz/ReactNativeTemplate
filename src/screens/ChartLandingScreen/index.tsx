@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
+import Fonts from "src/assets/fonts";
 import {
   ChartLandingLandingScreenProps,
   ChartLandingScreenState
@@ -16,7 +17,7 @@ class ChartLandingScreen extends Component<
   render() {
     return (
       <View>
-        <Text>{"Chart Landing"}</Text>
+        <Text style={[Fonts.bold]}>{"Chart Landing"}</Text>
       </View>
     );
   }
