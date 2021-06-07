@@ -1,6 +1,12 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { StatusBar, View } from "react-native";
+import FastImage from "react-native-fast-image";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Fonts from "src/assets/fonts";
+import Images from "src/assets/images/Images";
+import Icons from "src/assets/svg/Icons";
+import MainHeader from "src/components/Header";
+import Text from "src/components/Text";
 import {
   ChartLandingLandingScreenProps,
   ChartLandingScreenState
@@ -16,9 +22,17 @@ class ChartLandingScreen extends Component<
 
   render() {
     return (
-      <View>
-        <Text style={[Fonts.bold]}>{"Chart Landing"}</Text>
-      </View>
+      <SafeAreaView>
+        <StatusBar barStyle="dark-content" backgroundColor="white" />
+        <View style={{ flex: 1 }}>
+          <MainHeader leftIcon={<Icons.LeftArrowIcon />} />
+          <Text font={Fonts.bold}>{"Stock Detail"}</Text>
+          <FastImage
+            source={Images.appleIcon}
+            style={{ width: 52, height: 52 }}
+          />
+        </View>
+      </SafeAreaView>
     );
   }
 }
